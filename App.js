@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { Component } from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 
-import params from "./src/params";
+import params from './src/params'
 
-import Field from "./src/components/Filed";
+import Field from './src/components/Filed'
 
 export default class App extends Component {
-  render() {
+  render () {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Iniciando o Mines!</Text>
@@ -27,25 +27,25 @@ export default class App extends Component {
         <Field flagged />
         <Field flagged opened />
       </View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
   },
   welcome: {
     fontSize: 20,
-    textAlign: "center",
+    textAlign: 'center',
     margin: 10
   },
   instructions: {
-    textAlign: "center",
-    color: "#333333",
+    textAlign: 'center',
+    color: '#333333',
     marginBottom: 5
   }
-});
+})

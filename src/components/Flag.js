@@ -1,5 +1,6 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
+/* eslint-disable react/prop-types */
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
 
 export default props => {
   return (
@@ -11,40 +12,40 @@ export default props => {
       <View style={[styles.base1, props.bigger ? styles.base1Bigger : null]} />
       <View style={[styles.base2, props.bigger ? styles.base2Bigger : null]} />
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
     marginTop: 2
   },
   flagpole: {
-    position: "absolute",
+    position: 'absolute',
     height: 14,
     width: 2,
-    backgroundColor: "#222",
+    backgroundColor: '#222',
     marginLeft: 9
   },
   flag: {
-    position: "absolute",
+    position: 'absolute',
     height: 5,
     width: 6,
-    backgroundColor: "#F22",
+    backgroundColor: '#F22',
     marginLeft: 3
   },
   base1: {
-    position: "absolute",
+    position: 'absolute',
     height: 2,
     width: 6,
-    backgroundColor: "#222",
+    backgroundColor: '#222',
     marginLeft: 7,
     marginTop: 12
   },
   base2: {
-    position: "absolute",
+    position: 'absolute',
     height: 2,
     width: 10,
-    backgroundColor: "#222",
+    backgroundColor: '#222',
     marginLeft: 5,
     marginTop: 14
   },
@@ -70,4 +71,4 @@ const styles = StyleSheet.create({
     marginLeft: 8,
     marginTop: 24
   }
-});
+})
