@@ -82,11 +82,11 @@ const openField = (board, row, column) => {
       field.exploded = true
     } else if (safeNeighborhood(board, row, column)) {
       getNeighbors(board, row, column).forEach(n =>
-        openField(board, n.board, n.column)
+        openField(board, n.row, n.column)
       )
     } else {
-      const neighbor = getNeighbors(board, row, column)
-      field.nearMines = neighbor.filter(n => n.mined).length
+      const neighbors = getNeighbors(board, row, column)
+      field.nearMines = neighbors.filter(n => n.mined).length
     }
   }
 }

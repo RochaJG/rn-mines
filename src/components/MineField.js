@@ -6,7 +6,8 @@ export default props => {
   // eslint-disable-next-line react/prop-types
   const rows = props.board.map((row, r) => {
     const columns = row.map((field, c) => {
-      return <Field {...field} key={c} />
+      // eslint-disable-next-line react/prop-types
+      return <Field {...field} key={c} onOpen={() => props.onOpenField(r, c)} />
     })
     return (
       <View style={{ flexDirection: 'row' }} key={r}>
